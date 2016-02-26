@@ -1,7 +1,5 @@
 from setuptools import find_packages, setup
 
-from timetable import VERSION
-
 
 install_requires = [
     'flask == 0.10.1',
@@ -27,7 +25,7 @@ def readme():
 
 setup(
     name="timetable",
-    version=VERSION,
+    version=0.1,
     packages=find_packages(),
     url='https://github.com/jihyun00/timetable',
     install_requires=install_requires,
