@@ -1,7 +1,6 @@
 from sqlalchemy import Integer, Unicode
 from sqlalchemy.schema import Column
 
-
 from .db import Base
 
 
