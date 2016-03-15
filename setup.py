@@ -2,15 +2,18 @@ from setuptools import find_packages, setup
 
 
 install_requires = [
+    'bcrypt == 1.1.0',
     'flask == 0.10.1',
     'sqlalchemy == 1.0.11',
     'alembic == 0.7.4',
     'flake8 == 2.5.1',
+    'libsass >= 0.7.0, < 0.8.0',
+    'wtforms >= 2.0.2, < 2.1.0',
 ]
 
 
 tests_require = [
-    'pytest >= 2.7.0',
+    'pytest >= 2.9.0',
     'pytest-sugar',
 ]
 
