@@ -8,4 +8,4 @@ flake8 .
 
 echo "import-order..."
 
-import-order jeonminheebot .
+import-order timetable .

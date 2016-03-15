@@ -5,3 +5,5 @@ __pycache__/
 .cache/
 
 timetable.egg-info/
+
+tests/test.db

@@ -13,3 +13,5 @@ def test_create_user(f_session):
                          .filter(User.email == email) \
                          .first()
     assert find_user
+    assert find_user.password == password
+    assert find_user.email == email
