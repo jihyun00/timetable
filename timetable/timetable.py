@@ -6,6 +6,7 @@ from .db import Base
 
 __all__ = 'Timetable',
 
+
 class Timetable(Base):
 
     __tablename__ = 'timetables'

@@ -1,5 +1,5 @@
 import bcrypt
-from sqlalchemy import Integer, TypeDecorator, Unicode, UniqueConstraint
+from sqlalchemy import Integer, TypeDecorator, Unicode
 from sqlalchemy.schema import Column
 
 from .db import Base
@@ -92,4 +92,3 @@ class User(Base):
     password = Column(PasswordType, nullable=False)
 
     email = Column(Unicode, unique=True, nullable=False)
-

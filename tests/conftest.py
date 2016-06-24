@@ -1,8 +1,8 @@
 from pytest import fixture, yield_fixture
 from sqlalchemy import create_engine
 
-from timetable.db import Base, Session
 from timetable.app import app
+from timetable.db import Base, Session
 
 
 TEST_DATABASE_URL = 'sqlite:///test.db'

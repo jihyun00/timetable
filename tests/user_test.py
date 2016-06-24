@@ -1,5 +1,3 @@
-from pytest import fixture
-
 from timetable.user import User
 
 

@@ -8,11 +8,11 @@ __all__ = 'Category',
 
 
 class Category(Base):
-    
+
     __tablename__ = 'categories'
 
     id = Column(Integer, primary_key=True)
 
     name = Column(Unicode, nullable=False)
 
-    parent_id = Column(Integer, nullable=False)
+    parent_id = Column(Integer)
