@@ -1,5 +1,6 @@
-from sqlalchemy import Integer, Unicode
+from sqlalchemy.orm import relationship
 from sqlalchemy.schema import Column
+from sqlalchemy.types import Integer, Unicode
 
 from .db import Base
 
@@ -16,3 +17,5 @@ class Category(Base):
     name = Column(Unicode, nullable=False)
 
     parent_id = Column(Integer)
+
+    subjects = relationship('Subject', secondary='subject_category_assoc')
